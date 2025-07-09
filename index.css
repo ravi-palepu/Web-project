@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background-color: gainsboro;
+    overflow: hidden;
+}
+
+/* --- Navbar styles --- */
+nav {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: darkslategray;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #ddd;
+    text-decoration: underline;
+}
+
+nav input[type="text"] {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+nav input[type="text"]:focus {
+    border-color: #888;
+}
+
+/* --- Registration Form styles --- */
+.registrationform {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.regform {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.registrationform > form > div:first-child h1 {
+    text-align: center;
+    color: #333;
+    background-color: gainsboro;
+    border-radius: 8px;
+}
+
+.regform::-webkit-scrollbar {
+    width: 8px;
+    display: none;
+}
+
+.regform > div {
+    margin-bottom: 15px;
+}
+
+.regform > div:nth-child(2) input,
+.regform > div:nth-child(3) input,
+.regform > div:nth-child(4) input,
+.regform > div:nth-child(5) input,
+.regform > div:nth-child(7) input,
+.regform > div:nth-child(8) input,
+.regform > div:nth-child(10) input,
+.regform > div:nth-child(13) input,
+.regform > div:nth-child(14) input,
+.regform > div:nth-child(15) input,
+.regform > div:nth-child(18) input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.regform > div:nth-child(6) {
+    display: flex;
+    gap: 8px;
+}
+
+.regform > div:nth-child(9) select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.regform > div:nth-child(11) textarea,
+.regform > div:nth-child(12) textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 14px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.regform > div:nth-child(16) input[type="checkbox"],
+.regform > div:nth-child(17) input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label,
+span {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: 700;
+}
+
+.regform > div:nth-child(19) input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: gainsboro;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.regform > div:nth-child(19) input[type="submit"]:hover {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+/* --- Login Form styles --- */
+.loginform {
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(209, 243, 236, 0.856);
+}
+
+.loginform > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginform > div:nth-child(1) {
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.loginform > div:nth-child(1) > h1 {
+    color: #333;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.loginform input[type="email"],
+.loginform input[type="password"] {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.loginform > div:nth-child(4) input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    background-color: gainsboro;
+    border-radius: 7px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.loginform > div:nth-child(4) input[type="submit"]:hover {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+/* --- Home page card styles --- */
+.cardcontainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.card {
+    width: 450px;
+    padding: 10px;
+    box-shadow: 0px 0px 30px 1px #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.card > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.card > div > span {
+    font-weight: 700;
+    margin-right: 5px;
+}
